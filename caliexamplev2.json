@@ -1,0 +1,116 @@
+{
+	"calienv": {
+		"id": "16489d",
+		"name": "usecase",
+		"description": "Paper Use case",
+		"localdevices": [{
+				"deviceID": "as89498",
+				"entryPoint": "94:11:BB:FA:BF:50",
+				"name": "heart rate",
+				"description": "a heart rate sensor from",
+				"protocol": "bluetooth",
+				"attributes":[{"type":"aa","description":"adas","dataID":"12asdfasdf","value":"heartrate"}]
+			},
+			{
+				"deviceID": "sadf9844a98s2",
+				"entryPoint": "192.167.1.2",
+				"name": "gps",
+				"description": "a wifi-based gps located in the chest",
+				"protocol": "wifi",
+				"attributes":[{"type":"aa","description":"adas","dataID":"12asdfasdf","value":"heartrate"}]
+
+			}
+		],
+		"envdevices": [{
+				"deviceID": "ads029d",
+				"entryPoint": "/devices/2/ajso2oidij",
+				"name": "hvac",
+				"description": "a hvac",
+				"deviceUplink": "/devices/2/ajso2oidij/tx",
+				"deviceDownlink": "/devices/2/ajso2oidij/rx",
+				"technology": "LoRa",
+				"attributes":[{"type":"aa","description":"adas","dataID":"12asdfasdf","value":"heartrate"}]
+
+			},
+			{
+				"deviceID": "asfd498",
+				"entryPoint": "/devices/3/a9sd84984d",
+				"name": "window blind",
+				"description": "device to go up/down the window blinder",
+				"deviceUplink": "/devices/2/ajso2oidij/tx",
+				"deviceDownlink": "/devices/2/ajso2oidij/rx",
+				"technology": "LoRa",
+				"attributes":[{"type":"aa","description":"adas","dataID":"12asdfasdf","value":"heartrate"}]
+
+			}
+		],
+		"localdevicesevents": [{
+				"eventID": "adsf984",
+				"desription": "event related to body temperature (local)",
+				"name": "temperaturelocal"
+			},
+			{
+				"eventID": "098asd098f",
+				"desription": "event related to heart rate (local)",
+				"name": "heartratelocal"
+			},
+			{
+				"eventID": "98asfd98",
+				"desription": "event related to body acceleration (local)",
+				"name": "acclocal"
+			}
+		],
+		"envdevicesevents":[
+			{
+				"eventID": "098dd0",
+				"desription": "event related to environmental temperature (IoT)",
+				"name": "temperatureiot"
+			}],
+		"eventsconditions": [{
+				"eventCondID": "asd4892",
+				"description": "event E1",
+				"eventID": ["1", "2"]
+			},
+			{
+				"eventDescID": "a0sfd09",
+				"description": "event E2",
+				"eventID": ["3", "4", "5"]
+			}
+		],
+		"users": [{
+			"userID": "1841",
+			"authentication": [{
+				"name": "basic",
+				"token": "as4d98a4ds94d",
+				"username": "user0"
+			}, {
+				"name": "type0",
+				"token": "asdfasdfads",
+				"username": null
+			}]
+		}],
+		"localenv": [{
+			"name": "home",
+			"description": "body area network",
+			"localID": "as49d84as",
+			"devices": ["as89498", "sadf9844a98s2"]
+		}],
+		"iotenv": [{
+			"name": "iothome",
+			"description": "local environment at home",
+			"envID": "1212joi12",
+			"devices": ["ads029d", "ads029d"]
+		}],
+
+		"interactions": [{
+			"interactionID": "asdfjoaisd2",
+			"deviceIDReceiver": "asdfas",
+			"order": "order to send"
+		}],
+		"interactionconditions": [{
+			"interactionID": "asdfas",
+			"eventDescID": ["asdfadsf", "asdfads", "asdfadsf"]
+		}],
+
+	}
+}

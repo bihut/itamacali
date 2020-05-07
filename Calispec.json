@@ -1,0 +1,1001 @@
+ 
+{
+	"schema": {
+		"include": {
+			"__prefix": "xs"
+		},
+		"element": [
+			{
+				"_name": "AAL%20Environment",
+				"_type": "AAL%20Environment",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "AssociationClass1",
+				"_type": "AssociationClass1",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Authentication",
+				"_type": "Authentication",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Authorization",
+				"_type": "Authorization",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Device",
+				"_type": "Device",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Device%20Attributes",
+				"_type": "Device%20Attributes",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Environment%20Context%20Manager",
+				"_type": "Environment%20Context%20Manager",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Event",
+				"_type": "Event",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Event%20Condition",
+				"_type": "Event%20Condition",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "EventEnvironment",
+				"_type": "EventEnvironment",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "EventEnvironment",
+				"_type": "EventEnvironment",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "EventIoT",
+				"_type": "EventIoT",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "EventLocal",
+				"_type": "EventLocal",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "EventWBAN",
+				"_type": "EventWBAN",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Interaction",
+				"_type": "Interaction",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Interaction%20Condition",
+				"_type": "Interaction%20Condition",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "IoT%20Device",
+				"_type": "IoT%20Device",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "IoT%20Environment",
+				"_type": "IoT%20Environment",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Local%20Context%20Manager",
+				"_type": "Local%20Context%20Manager",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Relative",
+				"_type": "Relative",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Subject",
+				"_type": "Subject",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "Supervisor",
+				"_type": "Supervisor",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "User",
+				"_type": "User",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "WBAN",
+				"_type": "WBAN",
+				"__prefix": "xs"
+			},
+			{
+				"_name": "WBAN%20Device",
+				"_type": "WBAN%20Device",
+				"__prefix": "xs"
+			}
+		],
+		"complexType": [
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "Interaction",
+							"_type": "Interaction",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "WBAN",
+							"_type": "WBAN",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "IoT%20Environment",
+							"_type": "IoT%20Environment",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "User",
+							"_type": "User",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "User",
+							"_type": "User",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "AAL%20Environment",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"__prefix": "xs"
+				},
+				"_name": "AssociationClass1",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "authenticationID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "authenticationSchema",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "token",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "userID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "username",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "User",
+							"_type": "User",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "User",
+							"_type": "User",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Authentication",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "authorizedID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "userID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Authorization",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "description",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "deviceID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "entryPoint",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "name",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Event",
+							"_type": "Event",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Interaction",
+							"_type": "Interaction",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Device",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "dataID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "description",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "type",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "value",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Device%20Attributes",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "description",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "envContextID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "name",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "technology",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "EventIoT",
+							"_type": "EventIoT",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Environment%20Context%20Manager",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "description",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "eventID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "name",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "EventLocal",
+							"_type": "EventLocal",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Event%20Condition",
+							"_type": "Event%20Condition",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Event%20Condition",
+							"_type": "Event%20Condition",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Event%20Condition",
+							"_type": "Event%20Condition",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Event",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "description",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "eventDescID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "eventID",
+							"_type": "Array",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Interaction%20Condition",
+							"_type": "Interaction%20Condition",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Environment%20Context%20Manager",
+							"_type": "Environment%20Context%20Manager",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Interaction",
+							"_type": "Interaction",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Interaction",
+							"_type": "Interaction",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Event%20Condition",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": {
+						"_name": "environmentID",
+						"_minOccurs": "1",
+						"_maxOccurs": "1",
+						"__prefix": "xs"
+					},
+					"__prefix": "xs"
+				},
+				"_name": "EventEnvironment",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "environmentID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "eventDescID",
+							"_type": "Array",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "EventEnvironment",
+				"__prefix": "xs"
+			},
+			{
+				"complexContent": {
+					"extension": {
+						"sequence": {
+							"element": [
+								{
+									"_name": "EventEnvironment",
+									"_type": "EventEnvironment",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								},
+								{
+									"_name": "Event%20Condition",
+									"_type": "Event%20Condition",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								}
+							],
+							"__prefix": "xs"
+						},
+						"_base": "Event",
+						"__prefix": "xs"
+					},
+					"__prefix": "xs"
+				},
+				"_name": "EventIoT",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "eventDescID",
+							"_type": "Array",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "localID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "EventLocal",
+				"__prefix": "xs"
+			},
+			{
+				"complexContent": {
+					"extension": {
+						"sequence": {
+							"element": [
+								{
+									"_name": "EventLocal",
+									"_type": "EventLocal",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								},
+								{
+									"_name": "Event%20Condition",
+									"_type": "Event%20Condition",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								},
+								{
+									"_name": "Interaction",
+									"_type": "Interaction",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								}
+							],
+							"__prefix": "xs"
+						},
+						"_base": "Event",
+						"__prefix": "xs"
+					},
+					"__prefix": "xs"
+				},
+				"_name": "EventWBAN",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "deviceIDReceiver",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "interactionID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "order",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Device",
+							"_type": "Device",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Interaction",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "eventDescID",
+							"_type": "Array",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "interactionID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Interaction",
+							"_type": "Interaction",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Interaction%20Condition",
+				"__prefix": "xs"
+			},
+			{
+				"complexContent": {
+					"extension": {
+						"sequence": {
+							"element": [
+								{
+									"_name": "deviceDownlink",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								},
+								{
+									"_name": "deviceUplink",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								},
+								{
+									"_name": "iottechnology",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								},
+								{
+									"_name": "EventIoT",
+									"_type": "EventIoT",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								},
+								{
+									"_name": "Device%20Attributes",
+									"_type": "Device%20Attributes",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								}
+							],
+							"__prefix": "xs"
+						},
+						"_base": "Device",
+						"__prefix": "xs"
+					},
+					"__prefix": "xs"
+				},
+				"_name": "IoT%20Device",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "description",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "environmentID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "name",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Environment%20Context%20Manager",
+							"_type": "Environment%20Context%20Manager",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "IoT%20Device",
+							"_type": "IoT%20Device",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "User",
+							"_type": "User",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "IoT%20Environment",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "description",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "localID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "name",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "technology",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Event%20Condition",
+							"_type": "Event%20Condition",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Event%20Condition",
+							"_type": "Event%20Condition",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "EventWBAN",
+							"_type": "EventWBAN",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "Local%20Context%20Manager",
+				"__prefix": "xs"
+			},
+			{
+				"complexContent": {
+					"extension": {
+						"sequence": {
+							"__prefix": "xs"
+						},
+						"_base": "User",
+						"__prefix": "xs"
+					},
+					"__prefix": "xs"
+				},
+				"_name": "Relative",
+				"__prefix": "xs"
+			},
+			{
+				"complexContent": {
+					"extension": {
+						"sequence": {
+							"__prefix": "xs"
+						},
+						"_base": "User",
+						"__prefix": "xs"
+					},
+					"__prefix": "xs"
+				},
+				"_name": "Subject",
+				"__prefix": "xs"
+			},
+			{
+				"complexContent": {
+					"extension": {
+						"sequence": {
+							"__prefix": "xs"
+						},
+						"_base": "User",
+						"__prefix": "xs"
+					},
+					"__prefix": "xs"
+				},
+				"_name": "Supervisor",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "userID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "User",
+							"_type": "User",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Authentication",
+							"_type": "Authentication",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Authentication",
+							"_type": "Authentication",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "User",
+							"_type": "User",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "User",
+				"__prefix": "xs"
+			},
+			{
+				"sequence": {
+					"element": [
+						{
+							"_name": "description",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "name",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "wbanID",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "Local%20Context%20Manager",
+							"_type": "Local%20Context%20Manager",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "WBAN%20Device",
+							"_type": "WBAN%20Device",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						},
+						{
+							"_name": "User",
+							"_type": "User",
+							"_minOccurs": "1",
+							"_maxOccurs": "1",
+							"__prefix": "xs"
+						}
+					],
+					"__prefix": "xs"
+				},
+				"_name": "WBAN",
+				"__prefix": "xs"
+			},
+			{
+				"complexContent": {
+					"extension": {
+						"sequence": {
+							"element": [
+								{
+									"_name": "protocol",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								},
+								{
+									"_name": "Device%20Attributes",
+									"_type": "Device%20Attributes",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								},
+								{
+									"_name": "EventWBAN",
+									"_type": "EventWBAN",
+									"_minOccurs": "1",
+									"_maxOccurs": "1",
+									"__prefix": "xs"
+								}
+							],
+							"__prefix": "xs"
+						},
+						"_base": "Device",
+						"__prefix": "xs"
+					},
+					"__prefix": "xs"
+				},
+				"_name": "WBAN%20Device",
+				"__prefix": "xs"
+			}
+		],
+		"_xmlns:xs": "http://www.w3.org/2001/XMLSchema",
+		"__prefix": "xs"
+	}
+}

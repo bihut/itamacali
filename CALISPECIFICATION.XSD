@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include/>
+	<xs:element name="AAL%20Environment" type="AAL%20Environment"/>
+	<xs:complexType name="AAL%20Environment">
+		<xs:sequence>
+			<xs:element name="Interaction" type="Interaction" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="WBAN" type="WBAN" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="IoT%20Environment" type="IoT%20Environment" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="User" type="User" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="User" type="User" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="AssociationClass1" type="AssociationClass1"/>
+	<xs:complexType name="AssociationClass1">
+		<xs:sequence/>
+	</xs:complexType>
+	<xs:element name="Authentication" type="Authentication"/>
+	<xs:complexType name="Authentication">
+		<xs:sequence>
+			<xs:element name="authenticationID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="authenticationSchema" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="token" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="userID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="username" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="User" type="User" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="User" type="User" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Authorization" type="Authorization"/>
+	<xs:complexType name="Authorization">
+		<xs:sequence>
+			<xs:element name="authorizedID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="userID" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Device" type="Device"/>
+	<xs:complexType name="Device">
+		<xs:sequence>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="deviceID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="entryPoint" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Event" type="Event" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Interaction" type="Interaction" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Device%20Attributes" type="Device%20Attributes"/>
+	<xs:complexType name="Device%20Attributes">
+		<xs:sequence>
+			<xs:element name="dataID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="type" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="value" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Environment%20Context%20Manager" type="Environment%20Context%20Manager"/>
+	<xs:complexType name="Environment%20Context%20Manager">
+		<xs:sequence>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="envContextID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="technology" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="EventIoT" type="EventIoT" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Event" type="Event"/>
+	<xs:complexType name="Event">
+		<xs:sequence>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="eventID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="EventLocal" type="EventLocal" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Event%20Condition" type="Event%20Condition" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Event%20Condition" type="Event%20Condition" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Event%20Condition" type="Event%20Condition" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Event%20Condition" type="Event%20Condition"/>
+	<xs:complexType name="Event%20Condition">
+		<xs:sequence>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="eventDescID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="eventID" type="Array" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Interaction%20Condition" type="Interaction%20Condition" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Environment%20Context%20Manager" type="Environment%20Context%20Manager" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Interaction" type="Interaction" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Interaction" type="Interaction" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="EventEnvironment" type="EventEnvironment"/>
+	<xs:complexType name="EventEnvironment">
+		<xs:sequence>
+			<xs:element name="environmentID" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="EventEnvironment" type="EventEnvironment"/>
+	<xs:complexType name="EventEnvironment">
+		<xs:sequence>
+			<xs:element name="environmentID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="eventDescID" type="Array" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="EventIoT" type="EventIoT"/>
+	<xs:complexType name="EventIoT">
+		<xs:complexContent>
+			<xs:extension base="Event">
+				<xs:sequence>
+					<xs:element name="EventEnvironment" type="EventEnvironment" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="Event%20Condition" type="Event%20Condition" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="EventLocal" type="EventLocal"/>
+	<xs:complexType name="EventLocal">
+		<xs:sequence>
+			<xs:element name="eventDescID" type="Array" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="localID" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="EventWBAN" type="EventWBAN"/>
+	<xs:complexType name="EventWBAN">
+		<xs:complexContent>
+			<xs:extension base="Event">
+				<xs:sequence>
+					<xs:element name="EventLocal" type="EventLocal" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="Event%20Condition" type="Event%20Condition" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="Interaction" type="Interaction" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Interaction" type="Interaction"/>
+	<xs:complexType name="Interaction">
+		<xs:sequence>
+			<xs:element name="deviceIDReceiver" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="interactionID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="order" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Device" type="Device" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Interaction%20Condition" type="Interaction%20Condition"/>
+	<xs:complexType name="Interaction%20Condition">
+		<xs:sequence>
+			<xs:element name="eventDescID" type="Array" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="interactionID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Interaction" type="Interaction" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="IoT%20Device" type="IoT%20Device"/>
+	<xs:complexType name="IoT%20Device">
+		<xs:complexContent>
+			<xs:extension base="Device">
+				<xs:sequence>
+					<xs:element name="deviceDownlink" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="deviceUplink" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="iottechnology" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="EventIoT" type="EventIoT" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="Device%20Attributes" type="Device%20Attributes" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="IoT%20Environment" type="IoT%20Environment"/>
+	<xs:complexType name="IoT%20Environment">
+		<xs:sequence>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="environmentID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Environment%20Context%20Manager" type="Environment%20Context%20Manager" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="IoT%20Device" type="IoT%20Device" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="User" type="User" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Local%20Context%20Manager" type="Local%20Context%20Manager"/>
+	<xs:complexType name="Local%20Context%20Manager">
+		<xs:sequence>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="localID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="technology" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Event%20Condition" type="Event%20Condition" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Event%20Condition" type="Event%20Condition" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="EventWBAN" type="EventWBAN" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Relative" type="Relative"/>
+	<xs:complexType name="Relative">
+		<xs:complexContent>
+			<xs:extension base="User">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Subject" type="Subject"/>
+	<xs:complexType name="Subject">
+		<xs:complexContent>
+			<xs:extension base="User">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Supervisor" type="Supervisor"/>
+	<xs:complexType name="Supervisor">
+		<xs:complexContent>
+			<xs:extension base="User">
+				<xs:sequence/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="User" type="User"/>
+	<xs:complexType name="User">
+		<xs:sequence>
+			<xs:element name="userID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="User" type="User" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Authentication" type="Authentication" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Authentication" type="Authentication" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="User" type="User" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="WBAN" type="WBAN"/>
+	<xs:complexType name="WBAN">
+		<xs:sequence>
+			<xs:element name="description" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="name" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="wbanID" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="Local%20Context%20Manager" type="Local%20Context%20Manager" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="WBAN%20Device" type="WBAN%20Device" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="User" type="User" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="WBAN%20Device" type="WBAN%20Device"/>
+	<xs:complexType name="WBAN%20Device">
+		<xs:complexContent>
+			<xs:extension base="Device">
+				<xs:sequence>
+					<xs:element name="protocol" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="Device%20Attributes" type="Device%20Attributes" minOccurs="1" maxOccurs="1"/>
+					<xs:element name="EventWBAN" type="EventWBAN" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>
